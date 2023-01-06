@@ -1,0 +1,52 @@
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+}
+.container {
+  margin-top: 100px;
+  /* margin-left: 40px;
+  margin-right: 40px; */
+}
+
+.signup {
+  margin-top: 10%;
+}
+
+.app {
+  display: flex;
+  /* position: relative; */
+}
+
+.nav .nav-link {
+  color: #fff;
+  text-align: start;
+}
+
+.logo {
+  margin-left: 80%;
+}
+
+.navbar {
+  font-size: 16px;
+}
+
+.css-1lojo64-MuiTypography-root {
+  font-size: 2px;
+}
+.nav-link.active {
+  color: rgb(0, 132, 255) !important;
+}
+.nav-link {
+  color: #000 !important;
+}
+.tab-pane.active {
+  background-color: rgb(216, 211, 211) !important;
+}
+.form-control {
+  margin-bottom: 12px;
+}

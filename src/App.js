@@ -44,17 +44,15 @@ function App() {
           <Route path="/denied" element={<PermissionDenied />} />
         </Route> */}
 
-        {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/" element={<PublicRoute />}>
-          <Route path="/" element={<Login />} />
-        </Route>
-        <Route path="/login" element={<PublicRoute />}>
-          <Route path="/login" element={<Login />} />
-        </Route>
+        <Route path="/" element={<Home />} />
 
-        <Route path="/register" element={<PublicRoute />}>
+        {/* <Route path="/login" element={<PublicRoute />}>
+          <Route path="/login" element={<Login />} />
+        </Route> */}
+
+        {/* <Route path="/register" element={<PublicRoute />}>
           <Route path="/register" element={<Register />} />
-        </Route>
+        </Route> */}
 
         <Route path="/a" element={<PrivateRoute role="admin" />}>
           <Route path="" element={<Dashboard />}>
@@ -80,6 +78,8 @@ function App() {
 				<Route path="users/new" element={<NewUser />} /> */}
           </Route>
         </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
         {/* 
         <Route path="/" element={<PrivateRoute role="admin" />}>

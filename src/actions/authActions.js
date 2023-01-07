@@ -9,7 +9,7 @@ export const validateEmail = (email) => {
 // Register User
 export const doctorRegister = async (name, email, password, role) => {
   const response = await Axios.post(
-    'http://localhost:3001/api/doctor/register',
+    'https://xi-team-api.onrender.com/api/doctor/register',
     {
       name,
       email,
@@ -31,10 +31,13 @@ export const userLogout = () => {
 
 // Login User
 export const signin = async (email, password) => {
-  const response = await Axios.post('http://localhost:3001/api/doctor/signin', {
-    email,
-    password,
-  });
+  const response = await Axios.post(
+    'https://xi-team-api.onrender.com/api/doctor/signin',
+    {
+      email,
+      password,
+    }
+  );
   if (response.data) {
     localStorage.setItem('user', JSON.stringify(response.data));
   }

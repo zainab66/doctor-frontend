@@ -42,7 +42,7 @@ export const addUser = async (
 
 export const getUsersList = async () => {
   const response = await Axios.get(
-    'http://localhost:3001/api/assistant/getUsers',
+    'https://xi-team-api.onrender.com/api/assistant/getUsers',
     {
       headers: {
         Authorization: `Bearer ${
@@ -61,7 +61,7 @@ export const getUsersList = async () => {
 
 export const deleteUserInfo = async (userId) => {
   const response = await Axios.delete(
-    `http://localhost:3001/api/assistant/${userId}`,
+    `https://xi-team-api.onrender.com/api/assistant/${userId}`,
     {
       headers: {
         Authorization: `Bearer ${
@@ -80,7 +80,7 @@ export const deleteUserInfo = async (userId) => {
 
 export const editUser = async (user) => {
   const response = await Axios.put(
-    `http://localhost:3001/api/assistant/${user._id}`,
+    `https://xi-team-api.onrender.com/api/assistant/${user._id}`,
     user,
     {
       headers: {

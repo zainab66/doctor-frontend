@@ -44,7 +44,7 @@ function App() {
           <Route path="/denied" element={<PermissionDenied />} />
         </Route> */}
 
-        <Route path="/*" element={<Home />} />
+        <Route path="/" element={<Home />} />
 
         {/* <Route path="/login" element={<PublicRoute />}>
           <Route path="/login" element={<Login />} />
@@ -54,15 +54,14 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Route> */}
 
-        {/* <Route path="/a" element={<PrivateRoute role="admin" />}>
+        <Route path="/a" element={<PrivateRoute role="admin" />}>
           <Route path="" element={<Dashboard />}>
             <Route path="" element={<Main />} />
             <Route path="create/user/:id" element={<CreateUser />} />
             <Route path="userList" element={<UserList />} />
             <Route path="invite/user" element={<InviteUser />} />
- */}
 
-        {/* <Route path="tabs" element={<Tabs props={{userName: "Bikash web"}} />}>
+            {/* <Route path="tabs" element={<Tabs props={{userName: "Bikash web"}} />}>
 					<Route path="/tabs" element={<Navigate replace to="tab1" />} />
 					<Route path="tab1" element={<Tab1 />} />
 					<Route path="tab2" element={<ProtectedRoutes roleRequired="USER" />}>
@@ -70,7 +69,7 @@ function App() {
 					</Route>
 					<Route path="tab3" element={<Tab3 />} />
 				</Route> */}
-        {/* <Route path="settings" element={<Settings />} />
+            {/* <Route path="settings" element={<Settings />} />
 				<Route path="dynamic-form" element={<DynamicForm />} />
 				<Route
 					path="users"
@@ -78,9 +77,8 @@ function App() {
 				/>
 				<Route path="users/:userId" element={<SingleUser />} />
 				<Route path="users/new" element={<NewUser />} /> */}
-
-        {/* </Route>
-        </Route> */}
+          </Route>
+        </Route>
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -98,10 +96,10 @@ function App() {
 
         {/** Permission denied route */}
         {/* <Route path="/denied" element={<Denied />} /> */}
-        {/* 
+
         <Route path="/denied" element={<PrivateRoute role="Assistant" />}>
           <Route path="/denied" element={<Denied />} />
-        </Route> */}
+        </Route>
 
         {/* <Route path="/" element={<PrivateRoute role="false" />}>
           <Route path="/" element={<Dashboard />}>

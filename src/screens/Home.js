@@ -53,7 +53,7 @@ export default function Home() {
                   What would you like to manage with Xi-team?
                 </p>
                 <p>
-                  <a href="/" class="btn btn-primary my-2 mx-2">
+                  <a href="/a" class="btn btn-primary my-2 mx-2">
                     Clinic Management System{' '}
                   </a>
                   <a href="#" class="btn btn-primary my-2">

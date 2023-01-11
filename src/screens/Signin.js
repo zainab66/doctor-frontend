@@ -57,7 +57,7 @@ export default function Signin() {
     }
 
     if (isSuccess || user) {
-      navigate('/a');
+      navigate('/dashboard');
     }
 
     dispatch(reset());

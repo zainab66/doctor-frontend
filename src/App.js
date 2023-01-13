@@ -15,6 +15,10 @@ import Appointments from './screens/Appointments';
 import Patients from './screens/Patients';
 import Assistants from './screens/Assistants';
 import AddNewPatient from './screens/AddNewPatient';
+import Calender from './screens/Calender';
+import Tasks from './screens/Tasks';
+import Editor from './screens/Editor';
+import ColorPicker from './screens/ColorPicker';
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
               <Route path="add/assistant" element={<AddAssistant />} />
               <Route path="add/patient" element={<AddNewPatient />} />
               <Route path="add/patient" element={<AddNewPatient />} />
+              <Route path="calender" element={<Calender />} />
+              <Route path="tasks" element={<Tasks />} />
+              <Route path="editor" element={<Editor />} />
+              <Route path="colorPicker" element={<ColorPicker />} />
 
               {/* <Route path="create/user/:id" element={<CreateUser />} /> */}
             </Route>

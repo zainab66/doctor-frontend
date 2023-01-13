@@ -15,6 +15,11 @@ import { useStateContext } from '../../contexts/ContextProvider';
 export default function Pie({ id, data, legendVisiblity, height }) {
   const { currentMode } = useStateContext();
 
+  // const tooltipRender = (args) => {
+  //   let value = (args.point.y / args.series.sumOfPoints) * 100;
+  //   args.text = Math.ceil(value) + '' + '%';
+  // };
+
   return (
     <AccumulationChartComponent
       id={id}

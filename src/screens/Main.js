@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsCurrencyDollar } from 'react-icons/bs';
+import { BiFirstAid } from 'react-icons/bi';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
@@ -9,6 +9,10 @@ import LineChart from '../components/Charts/LineChart';
 import Button from '../components/Button';
 import SparkLine from '../components/Charts/SparkLine';
 import Stacked from '../components/Charts/Stacked';
+import { TbDisabled } from 'react-icons/tb';
+import { MdOutlineBloodtype } from 'react-icons/md';
+import { BsCurrencyDollar } from 'react-icons/bs';
+import { FaUserMd } from 'react-icons/fa';
 
 import {
   earningData,

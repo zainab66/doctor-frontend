@@ -6,8 +6,10 @@ import {
   Inject,
   Legend,
   Category,
+  DataLabel,
   StackingColumnSeries,
   Tooltip,
+  ColumnSeries,
 } from '@syncfusion/ej2-react-charts';
 
 import {
@@ -19,7 +21,24 @@ import { useStateContext } from '../../contexts/ContextProvider';
 
 export default function Stacked({ width, height }) {
   const { currentMode } = useStateContext();
-
+  const data1 = [
+    { x: 'Jan', y: 111.1 },
+    { x: 'Feb', y: 127.3 },
+    { x: 'Mar', y: 143.4 },
+    { x: 'Apr', y: 159.9 },
+    { x: 'May', y: 159.9 },
+    { x: 'Jun', y: 159.9 },
+    { x: 'July', y: 159.9 },
+  ];
+  const data2 = [
+    { x: 'Jan', y: 99.1 },
+    { x: 'Feb', y: 88.3 },
+    { x: 'Mar', y: 77.4 },
+    { x: 'Apr', y: 66.9 },
+    { x: 'May', y: 55.9 },
+    { x: 'Jun', y: 44.9 },
+    { x: 'July', y: 33.9 },
+  ];
   return (
     <ChartComponent
       id="charts"

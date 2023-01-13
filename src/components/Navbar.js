@@ -70,12 +70,12 @@ export default function Navbar() {
         icon={<AiOutlineMenu />}
       />
       <div className="flex">
-        <NavButton
+        {/* <NavButton
           title="Cart"
           customFunc={() => handleClick('cart')}
           color={currentColor}
           icon={<FiShoppingCart />}
-        />
+        /> */}
         <NavButton
           title="Chat"
           dotColor="#03C9D7"
